@@ -559,6 +559,10 @@ video {
   position: relative;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -636,6 +640,14 @@ video {
   height: 4rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -656,6 +668,10 @@ video {
   width: 48%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .w-footer {
   width: 90%;
 }
@@ -666,6 +682,14 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-lg-progress-30 {
+  width: 30%;
 }
 
 .max-w-full {
@@ -708,12 +732,12 @@ video {
   gap: 1.25rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-full {
@@ -864,8 +888,8 @@ video {
     display: flex;
   }
 
-  .sm\:w-4\/5 {
-    width: 80%;
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .sm\:text-center {
@@ -874,6 +898,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -891,28 +919,48 @@ video {
     display: grid;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-2\/5 {
     width: 40%;
-  }
-
-  .md\:w-footer {
-    width: 90%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:w-3\/4 {
     width: 75%;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
-  .md\:justify-around {
-    justify-content: space-around;
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-footer {
+    width: 90%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-5 {
@@ -921,5 +969,35 @@ video {
 
   .md\:text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:order-2 {
+    order: 2;
+  }
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:w-footer {
+    width: 90%;
+  }
+
+  .lg\:w-lg-progress-30 {
+    width: 30%;
+  }
+
+  .lg\:w-lg-progress-70 {
+    width: 70%;
   }
 }

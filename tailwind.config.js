@@ -13,7 +13,9 @@ module.exports = {
       },
       spacing: {
         "card" : "48%",
-        "footer": "90%"
+        "footer": "90%",
+        "lg-progress-30" : "30%",
+        "lg-progress-70" : "70%"
       }
     },
   },

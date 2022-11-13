@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="container w-full">
+    <div class="container max-w-full">
         <header>
             <div class="header text-slate-100 relative">
                 <nav class="w-full mx-auto md:flex md:justify-between">
@@ -68,9 +68,9 @@
             </div>
         </header>
         <main>
-            <!-- <div class="wrapper w-4/5 mx-auto"> -->
-                <div class=" p-2">
-                    <div class="just">
+            <div class="wrapper md:w-full lg:w-footer mx-auto">
+                <div class=" p-2 md:flex">
+                    <div class="just md:w-2/5">
                         <section>
                             <section class="my-3">
                                 <h2 class="text-just">JUST FOR THOSE WHO USE US</h2>
@@ -86,7 +86,7 @@
                                 <section class="foto">
                                     <img src="./public/img/bg-agus.jpg" class="w-16 h-16 rounded-full" alt="">
                                 </section>
-                                <section class="">
+                                <section class=" md:w-3/4">
                                     <h1 class="font-bold">MUHAMMAD AGUS</h1>
                                     <p class="font-thin">UI/UX Designer</p>
                                 </section>
@@ -104,10 +104,10 @@
                         </div>
                     </div>
                     <!-- card -->
-                    <div class="card w-full my-5 box-border">
-                        <section class="flex sm:flex md:grid justify-center flex-wrap gap-3 box-border">
+                    <div class="card w-full my-5 box-border md:w-3/5">
+                        <section class="flex sm:flex md:grid md:grid-cols-2 md:row-span-2 justify-center flex-wrap gap-3 box-border">
                             <div
-                                class="card-1 w-card p-2 rounded-xl border-x-2 border-y-2 border-l-sky-600 border-b-sky-600">
+                                class="card-1 w-card md:w-auto p-2 rounded-xl border-x-2 border-y-2 border-l-sky-600 border-b-sky-600">
                                 <section class="logo-card mt-3">
                                     <img src="./public/img/⛑.png" alt="">
                                 </section>
@@ -118,7 +118,7 @@
                                 </section>
                             </div>
                             <div
-                                class="card-2 w-card p-2 rounded-xl border-x-2 border-y-2 border-l-sky-600 border-b-sky-600">
+                                class="card-2 w-card md:w-auto p-2 rounded-xl border-x-2 border-y-2 border-l-sky-600 border-b-sky-600">
                                 <section class="logo-card mt-3">
                                     <img src="./public/img/🎟.png" alt="">
                                 </section>
@@ -129,26 +129,26 @@
                                 </section>
                             </div>
                             <div
-                                class="card-2 w-card p-2 rounded-xl border-x-2 border-y-2 border-l-sky-600 border-b-sky-600">
-                                <section class="logo-card mt-3">
-                                    <img src="./public/img/🏝.png" alt="">
-                                </section>
-                                <section class="my-5">
-                                    <h1 class="font-bold my-3">Guaraneteed Safety</h1>
-                                    <p class="font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                                        facilis dolores doloremque.</p>
-                                </section>
-                            </div>
+                            class="card-3 w-card md:w-auto p-2 rounded-xl border-x-2 border-y-2 border-l-sky-600 border-b-sky-600">
+                            <section class="logo-card mt-3">
+                                <img src="./public/img/🏝.png" alt="">
+                            </section>
+                            <section class="my-5">
+                                <h1 class="font-bold my-3">Guaraneteed Safety</h1>
+                                <p class="font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                    facilis dolores doloremque.</p>
+                            </section>
+                        </div>
                         </section>
                     </div>
                 </div>
                 <!-- akhir -->
-                <div class="progress">
-                    <section class="progress-1 shadow-xl box-border block rounded-lg bg-slate-50 p-10 ">
+                <div class="progress md:flex">
+                    <section class="progress-1 shadow-xl box-border block rounded-lg bg-slate-50 p-10 md:w-1/2 lg:w-lg-progress-30 ">
                         <header>
                             <h1 class="font-bold text-xl">Progress in our application</h1>
                         </header>
-                        <section>
+                        <section class="my-3">
                             <img src="./public/img/line.png" alt="">
                         </section>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur expedita eum maxime
@@ -157,9 +157,9 @@
                         <section><img src="./public/img/people.png" alt=""></section>
                     </section>
                     <!-- progress ke 2 -->
-                    <section class="progress-2 my-10 p-3">
-                        <section class="container">
-                            <section class="order-1 my-5">
+                    <section class="progress-2 my-10 p-3 md:w-1/2 lg:w-lg-progress-70">
+                        <section class="container lg:flex">
+                            <section class="order-1 my-3 lg:order-2">
                                 <section>
                                     <h2 class="text-sm text-just">JUST FOR THOSE WHO USE US</h2>
                                     <h1 class="font-bold text-2xl my-2">Progress in our Application</h1>
@@ -180,7 +180,7 @@
                                     </section>
                                 </section>
                             </section>
-                            <section class="order-2 flex" >
+                            <section class="order-2 flex lg:grid lg:order-1 z-50" >
                                 <section><img src="./public/img/presentase-1.png" alt=""></section>
                                 <section><img src="./public/img/presentase-2.png" alt=""></section>
                                 </section>
@@ -204,26 +204,62 @@
                         <span class="block text-just text-center">JUST FOR THOSE WHO USE US</span>
                         <h1 class="text-center font-bold text-2xl">Comments on this App</h1>
                     </section>
-                    <section class="grid">
-                        <div class="card-1">
-                            <section class="flex justify-center items-center">
-                                <img src="./public/img/grid-1.png" alt="">
+                    <div class="card grid md:grid-cols-3 p-10 gap-3">
+                        <div class="card-1 max-w-lg-progress-30 p-5 rounded-xl shadow-xl" >
+                            <section class="my-5">
+                                <section class="header-card-1 flex justify-center ">
+                                    <img src="./public/img/FotoLamaranAlmet.png" class="rounded-full w-20 h-20" alt="">
+                                </section>
+                                <section>
+                                    <h1 class="text-center my-3">MUHAMMAD AGUS</h1>
+                                    <span class="text-center block my-3">UI/UX Designer</span>
+                                </section>
+                            </section>
+                            <section class="card-content flex justify-center">
+                                <p class="text-center font-thin"><span class="text-3xl text-signup">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt magnam, atque minima voluptatem commodi voluptatibus incidunt labore eius id.<span class="text-3xl text-signup">"</span></p>
+                            </section>
+                            <section class="flex justify-center my-5">
+                                <img src="./public/img/star.png" alt="">
                             </section>
                         </div>
-                        <div class="card-2">
-                            <section class="flex justify-center items-center">
-                                <img src="./public/img/gird-2.png" alt="">
+                        <div class="card-1 max-w-lg-progress-30 p-5 rounded-xl shadow-xl" >
+                            <section class="my-5">
+                                <section class="header-card-1 flex justify-center ">
+                                    <img src="./public/img/FotoLamaranAlmet.png" class="rounded-full w-20 h-20" alt="">
+                                </section>
+                                <section>
+                                    <h1 class="text-center my-3">MUHAMMAD AGUS</h1>
+                                    <span class="text-center block my-3">UI/UX Designer</span>
+                                </section>
+                            </section>
+                            <section class="card-content flex justify-center">
+                                <p class="text-center font-thin"><span class="text-3xl text-signup">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt magnam, atque minima voluptatem commodi voluptatibus incidunt labore eius id.<span class="text-3xl text-signup">"</span></p>
+                            </section>
+                            <section class="flex justify-center my-5">
+                                <img src="./public/img/star.png" alt="">
                             </section>
                         </div>
-                        <div class="card-3">
-                            <section class="flex justify-center items-center">
-                                <img src="./public/img/gird-3.png" alt="">
+                        <div class="card-1 max-w-lg-progress-30 p-5 rounded-xl shadow-xl" >
+                            <section class="my-5">
+                                <section class="header-card-1 flex justify-center ">
+                                    <img src="./public/img/FotoLamaranAlmet.png" class="rounded-full w-20 h-20" alt="">
+                                </section>
+                                <section>
+                                    <h1 class="text-center my-3">MUHAMMAD AGUS</h1>
+                                    <span class="text-center block my-3">UI/UX Designer</span>
+                                </section>
+                            </section>
+                            <section class="card-content flex justify-center">
+                                <p class="text-center font-thin"><span class="text-3xl text-signup">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deserunt magnam, atque minima voluptatem commodi voluptatibus incidunt labore eius id.<span class="text-3xl text-signup">"</span></p>
+                            </section>
+                            <section class="flex justify-center my-5">
+                                <img src="./public/img/star.png" alt="">
                             </section>
                         </div>
-                    </section>
+                    </div>
                 </div>
                 <!-- akhir -->
-            <!-- </div> -->
+            </div>
             <div class="footer">
                 <div class="container-footer bg-[url('./public/img/bg-progress')] bg-slate-900 p-5">
                     <div class="naik-kapal w-footer mx-auto">
