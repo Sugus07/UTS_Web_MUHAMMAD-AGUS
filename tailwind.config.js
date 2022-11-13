@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "signup":"#8992FA;",
         "just" : "#FFD31D;",
+        "hover-signup": "#8D72E1"
       },
       backgroundImage: {
         "header": "url('./public/img/bg-header.png')",

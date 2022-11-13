@@ -30,24 +30,24 @@
 
 <body>
     <div class="container max-w-full">
-        <header>
-            <div class="header text-slate-100 relative">
+        <header id="home">
+            <div  class="header text-slate-100 relative">
                 <nav class="w-full mx-auto md:flex md:justify-between">
                     <section class="logo mx-auto flex justify-center md:mt-3">
                         <h1 class="font-bold text-2xl text-slate-100"><span class="text-signup">Naik</span>.kapal</h1>
                     </section>
                     <section class="mx-auto flex justify-center items-center my-5">
-                        <ul class="flex gap-3 md:gap-5 text-xs lg:text-base">
-                            <li><a href="#" class="hover:text-signup">Home</a></li>
-                            <li><a href="#" class="hover:text-signup">Destination</a></li>
-                            <li><a href="#" class="hover:text-signup">Choose Class</a></li>
-                            <li><a href="#" class="hover:text-signup">Manage</a></li>
-                            <li><a href="#" class="hover:text-signup">About Us</a></li>
+                        <ul class="home flex gap-3 md:gap-5 text-xs lg:text-base">
+                            <li><a href="#home" class="hover:text-signup">Home</a></li>
+                            <li><a href="#destination" class="hover:text-signup">Destination</a></li>
+                            <li><a href="#choose" class="hover:text-signup">Choose Class</a></li>
+                            <li><a href="#footer" class="hover:text-signup">Manage</a></li>
+                            <li><a href="#footer" class="hover:text-signup">About Us</a></li>
                         </ul>
                     </section>
                     <section class="flex mx-auto justify-center my-5">
                         <section class="login"><a href="#" class="p-2">Login</a></section>
-                        <section class="sign-up"><a href="#" class="py-2 px-5 rounded-lg bg-signup">Sign Up</a></section>
+                        <section class="sign-up"><a href="#" class="py-2 px-5 rounded-lg bg-signup hover:bg-hover-signup">Sign Up</a></section>
                     </section>
                 </nav>
                 <div class="content-header my-10 absolute mt-20 ">
@@ -60,7 +60,7 @@
                                 illum eligendi expedita!</p>
                         </section>
                         <section class="mx-auto flex justify-center">
-                            <a href="#" class="bg-signup rounded-xl py-2 px-5">Sign Up</a>
+                            <a href="#" class="bg-signup rounded-xl py-2 px-5 hover:bg-hover-signup">Sign Up</a>
                         </section>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         <section><img src="./public/img/people.png" alt=""></section>
                     </section>
                     <!-- progress ke 2 -->
-                    <section class="progress-2 my-10 p-3 md:w-1/2 lg:w-lg-progress-70">
+                    <section id="choose" class="progress-2 my-10 p-3 md:w-1/2 lg:w-lg-progress-70">
                         <section class="container lg:flex">
                             <section class="order-1 my-3 lg:order-2">
                                 <section>
@@ -192,14 +192,14 @@
                     </section>
                 </div>
                 <!-- akhir -->
-                <div class="progress-application bg-blue-50 mt-20 p-20 mx-auto bg-progress z-10">
+                <div id="destination" class="progress-application bg-blue-50 mt-20 p-20 mx-auto bg-progress z-10">
                     <section>
                         <span class="text-just text-center block">JUST FOR THOSE WHO USE US</span>
                         <h1 class="font-bold text-2xl text-center my-3">Progress in our Application</h1>
                         <p class="font-thin text-center my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum saepe magnam maiores?</p>
                     </section>
                     <section class="mx-auto flex justify-center my-2">
-                        <a href="#" class="px-10 py-2 rounded-lg bg-signup">Sign up</a>
+                        <a href="#" class="px-10 py-2 rounded-lg bg-signup hover:bg-hover-signup">Sign up</a>
                     </section>
                 </div>
                 <!-- akhir -->
@@ -264,45 +264,51 @@
                 </div>
                 <!-- akhir -->
             </div>
-            <div class="footer">
+            <div id="footer" class="footer">
                 <div class="container-footer bg-[url('./public/img/bg-progress')] bg-slate-900 p-5">
-                    <div class="naik-kapal w-footer mx-auto">
-                        <h1 class="font-bold text-slate-100 my-3 text-xl"><span class="text-signup">Naik</span>.kapal</h1>
-                        <p class="text-slate-100 font-thin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, reiciendis? Perferendis provident deserunt dolore cum pariatur esse, adipisci id! Laborum nesciunt odio ipsa! Consequuntur repudiandae eum, quasi ullam vitae asperiores.</p>
-                    </div>
-                    <div class="menu-footer text-slate-100 my-5">
-                        <section>
-                            <ul class="flex gap-5 justify-center font-bold">
-                                <li><a href="#">About</a>
-                                <ul class="text-sm font-thin">
-                                    <li><a href="#">Progress</a></li>
-                                    <li><a href="#">Comment</a></li>
-                                </ul></li>
-                                <li><a href="#">Destination</a>
-                                <ul class="text-sm font-thin">
-                                    <li><a href="#">Waters</a></li>
-                                    <li><a href="#">Mainland</a></li>
-                                </ul></li>
-                                <li><a href="#">Choose Class</a>
-                                <ul class="text-sm font-thin">
-                                    <li><a href="#">Economy</a></li>
-                                    <li><a href="#">Executive</a></li>
-                                    <li><a href="#">VVIP</a></li>
-                                </ul></li>
-                                <li><a href="#">Contact Us</a>
-                                <ul class="text-sm font-thin">
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Log in</a></li>
-                                </ul></li>
-                            </ul>
+                    <div class="md:flex">
+                        <section class="md:w-2/5">
+                            <div class="naik-kapal w-footer mx-auto">
+                                <h1 class="font-bold text-slate-100 my-3 text-xl"><span class="text-signup">Naik</span>.kapal</h1>
+                                <p class="text-slate-100 font-thin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, reiciendis? Perferendis provident deserunt dolore cum pariatur esse, adipisci id! Laborum nesciunt odio ipsa! Consequuntur repudiandae eum, quasi ullam vitae asperiores.</p>
+                            </div>
+                        </section>
+                        <section class="md:w-3/5">
+                            <div class="menu-footer text-slate-100 my-5">
+                                <section>
+                                    <ul class="flex gap-5 lg:gap-16 justify-center font-bold">
+                                        <li><a href="#">About</a>
+                                        <ul class="text-sm font-thin">
+                                            <li><a href="#">Progress</a></li>
+                                            <li><a href="#">Comment</a></li>
+                                        </ul></li>
+                                        <li><a href="#">Destination</a>
+                                        <ul class="text-sm font-thin">
+                                            <li><a href="#">Waters</a></li>
+                                            <li><a href="#">Mainland</a></li>
+                                        </ul></li>
+                                        <li><a href="#">Choose Class</a>
+                                        <ul class="text-sm font-thin">
+                                            <li><a href="#">Economy</a></li>
+                                            <li><a href="#">Executive</a></li>
+                                            <li><a href="#">VVIP</a></li>
+                                        </ul></li>
+                                        <li><a href="#">Contact Us</a>
+                                        <ul class="text-sm font-thin">
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Log in</a></li>
+                                        </ul></li>
+                                    </ul>
+                                </section>
+                            </div>
                         </section>
                     </div>
-                    <footer class="text-slate-100 w-3/4 mx-auto flex justify-center flex-wrap md:w-footer md:mx-auto">
-                        <section class="text-center flex max-w-full justify-center order-2">
+                    <footer class="text-slate-100 w-3/4 mx-auto flex justify-center flex-wrap md:w-footer md:justify-between md:mx-auto md:mt-5 text-xs md:-mb-5">
+                        <section class="text-center flex md:text-left max-w-full justify-center order-2 md:order-1 mt-2">
                             <span>©Naik.kapal All Rights Reserved</span>
                         </section>
-                        <section class="flex justify-center order-1 max-w-full">
+                        <section class="flex justify-center order-1 md:order-2 max-w-full">
                             <section>
                                 <ul class="flex gap-3 items-center justify-center">
                                     <li><a href="#"><img src="./public/img/fb.png" alt=""></a></li>
@@ -316,7 +322,6 @@
                 </div>
             </div>
         </main>
-        <div class="mb mb-96"></div>
     </div>
 </body>
 
